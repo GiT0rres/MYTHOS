@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
@@ -74,11 +73,21 @@ fun ComparePage(
                 }
             }
 
-            Row(modifier = Modifier.fillMaxWidth().height(220.dp)) {
-                CompareHeader(first, Modifier.weight(1f))
-                CompareHeader(second, Modifier.weight(1f))
-            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(220.dp)
+            ) {
+                CompareHeader(
+                    deity = first,
+                    modifier = Modifier.weight(1f)
+                )
 
+                CompareHeader(
+                    deity = second,
+                    modifier = Modifier.weight(1f)
+                )
+            }
             Box(
                 modifier = Modifier
                     .fillMaxWidth()

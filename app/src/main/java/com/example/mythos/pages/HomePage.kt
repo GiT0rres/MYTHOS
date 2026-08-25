@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Bolt
@@ -46,18 +45,25 @@ fun HomePage(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 20.dp, vertical = 24.dp),
+                .padding(
+                    horizontal = 20.dp,
+                    vertical = 24.dp
+                ),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             MythosWordmark()
+
             Spacer(Modifier.height(16.dp))
+
             Text(
                 text = "Bem-vinda, $userName. Explore os mitos e descubra as conexões entre culturas.",
                 color = MythosIvory,
                 style = MaterialTheme.typography.bodyMedium,
                 textAlign = TextAlign.Center
             )
+
             Spacer(Modifier.height(20.dp))
+
             ArtworkFrame(
                 name = "Zeus",
                 modifier = Modifier
@@ -65,17 +71,51 @@ fun HomePage(
                     .weight(1f)
                     .clip(RoundedCornerShape(12.dp))
             )
+
             Spacer(Modifier.height(20.dp))
-            GoldButton(text = "EXPLORAR", onClick = onExplore)
+
+            GoldButton(
+                text = "EXPLORAR",
+                onClick = onExplore
+            )
+
             Spacer(Modifier.height(20.dp))
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(10.dp)
             ) {
-                CategoryTile("DEUSES", Icons.Filled.AccountBalance, Modifier.weight(1f)) { onCategory("Todas") }
-                CategoryTile("HERÓIS", Icons.Filled.Whatshot, Modifier.weight(1f)) { onCategory("Grega") }
-                CategoryTile("CRIADORES", Icons.Filled.WorkspacePremium, Modifier.weight(1f)) { onCategory("Egípcia") }
-                CategoryTile("PODERES", Icons.Filled.Bolt, Modifier.weight(1f)) { onCategory("Nórdica") }
+                CategoryTile(
+                    label = "DEUSES",
+                    icon = Icons.Filled.AccountBalance,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    onCategory("Todas")
+                }
+
+                CategoryTile(
+                    label = "HERÓIS",
+                    icon = Icons.Filled.Whatshot,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    onCategory("Grega")
+                }
+
+                CategoryTile(
+                    label = "CRIADORES",
+                    icon = Icons.Filled.WorkspacePremium,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    onCategory("Egípcia")
+                }
+
+                CategoryTile(
+                    label = "PODERES",
+                    icon = Icons.Filled.Bolt,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    onCategory("Nórdica")
+                }
             }
         }
     }
@@ -92,13 +132,28 @@ private fun CategoryTile(
         modifier = modifier
             .clip(RoundedCornerShape(12.dp))
             .background(MythosSurface)
-            .border(1.dp, MythosBorder, RoundedCornerShape(12.dp))
+            .border(
+                1.dp,
+                MythosBorder,
+                RoundedCornerShape(12.dp)
+            )
             .clickableNoRipple(onClick)
             .padding(vertical = 14.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Icon(icon, contentDescription = label, tint = MythosGold, modifier = Modifier.size(22.dp))
+        Icon(
+            icon,
+            contentDescription = label,
+            tint = MythosGold,
+            modifier = Modifier.size(22.dp)
+        )
+
         Spacer(Modifier.height(6.dp))
-        Text(label, color = MythosGold, style = MaterialTheme.typography.labelSmall)
+
+        Text(
+            label,
+            color = MythosGold,
+            style = MaterialTheme.typography.labelSmall
+        )
     }
 }

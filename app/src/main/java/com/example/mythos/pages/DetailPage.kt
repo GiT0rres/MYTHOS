@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -55,12 +54,14 @@ fun DetailPage(
                 .verticalScroll(rememberScrollState())
         ) {
             Box(modifier = Modifier.fillMaxWidth()) {
+
                 ArtworkFrame(
                     name = deity.name,
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(360.dp)
                 )
+
                 Icon(
                     imageVector = Icons.Filled.ArrowBack,
                     contentDescription = "Voltar",
@@ -71,6 +72,7 @@ fun DetailPage(
                         .size(24.dp)
                         .clickableNoRipple(onBack)
                 )
+
                 Box(
                     modifier = Modifier
                         .align(Alignment.TopEnd)
@@ -86,20 +88,38 @@ fun DetailPage(
                     .fillMaxWidth()
                     .padding(20.dp)
             ) {
-                Text(deity.name, color = MythosIvory, style = MaterialTheme.typography.titleLarge)
+                Text(
+                    deity.name,
+                    color = MythosIvory,
+                    style = MaterialTheme.typography.titleLarge
+                )
+
                 Text(
                     "Mitologia ${deity.culture}",
                     color = MythosGoldOrIvory(),
                     style = MaterialTheme.typography.bodyLarge
                 )
-                Text(deity.period, color = MythosMuted, style = MaterialTheme.typography.bodyMedium)
+
+                Text(
+                    deity.period,
+                    color = MythosMuted,
+                    style = MaterialTheme.typography.bodyMedium
+                )
+
                 Spacer(Modifier.height(12.dp))
 
                 Box(
                     modifier = Modifier
                         .clip(RoundedCornerShape(50))
-                        .border(1.dp, MythosGold, RoundedCornerShape(50))
-                        .padding(horizontal = 12.dp, vertical = 6.dp)
+                        .border(
+                            1.dp,
+                            MythosGold,
+                            RoundedCornerShape(50)
+                        )
+                        .padding(
+                            horizontal = 12.dp,
+                            vertical = 6.dp
+                        )
                 ) {
                     Text(
                         deity.epithet,
@@ -109,31 +129,57 @@ fun DetailPage(
                 }
 
                 Spacer(Modifier.height(16.dp))
+
                 Text(
                     deity.description,
                     color = MythosIvory,
                     style = MaterialTheme.typography.bodyLarge
                 )
+
                 Spacer(Modifier.height(20.dp))
+
                 Divider24()
+
                 Spacer(Modifier.height(16.dp))
 
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    AttributeItem("PODER", deity.power, Icons.Filled.Bolt, Modifier.weight(1f))
-                    AttributeItem("DOMÍNIO", deity.domain, Icons.Filled.AccountBalance, Modifier.weight(1f))
-                    AttributeItem("SÍMBOLO", deity.symbol, Icons.Filled.Shield, Modifier.weight(1f))
+                    AttributeItem(
+                        "PODER",
+                        deity.power,
+                        Icons.Filled.Bolt,
+                        Modifier.weight(1f)
+                    )
+
+                    AttributeItem(
+                        "DOMÍNIO",
+                        deity.domain,
+                        Icons.Filled.AccountBalance,
+                        Modifier.weight(1f)
+                    )
+
+                    AttributeItem(
+                        "SÍMBOLO",
+                        deity.symbol,
+                        Icons.Filled.Shield,
+                        Modifier.weight(1f)
+                    )
                 }
 
                 Spacer(Modifier.height(16.dp))
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(10.dp))
                         .background(MythosSurface)
-                        .border(1.dp, MythosBorder, RoundedCornerShape(10.dp))
+                        .border(
+                            1.dp,
+                            MythosBorder,
+                            RoundedCornerShape(10.dp)
+                        )
                         .padding(14.dp)
                 ) {
                     Column {
@@ -142,7 +188,9 @@ fun DetailPage(
                             color = MythosGold,
                             style = MaterialTheme.typography.labelSmall
                         )
+
                         Spacer(Modifier.height(4.dp))
+
                         Text(
                             deity.artwork,
                             color = MythosIvory,
@@ -152,7 +200,12 @@ fun DetailPage(
                 }
 
                 Spacer(Modifier.height(24.dp))
-                GoldButton("COMPARAR", onClick = onCompare)
+
+                GoldButton(
+                    "COMPARAR",
+                    onClick = onCompare
+                )
+
                 Spacer(Modifier.height(24.dp))
             }
         }
@@ -173,9 +226,21 @@ private fun AttributeItem(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Icon(icon, contentDescription = label, tint = MythosGold, modifier = Modifier.size(22.dp))
+        Icon(
+            icon,
+            contentDescription = label,
+            tint = MythosGold,
+            modifier = Modifier.size(22.dp)
+        )
+
         Spacer(Modifier.height(6.dp))
-        Text(label, color = MythosGold, style = MaterialTheme.typography.labelSmall)
+
+        Text(
+            label,
+            color = MythosGold,
+            style = MaterialTheme.typography.labelSmall
+        )
+
         Text(
             value,
             color = MythosIvory,
