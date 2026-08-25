@@ -1,4 +1,4 @@
-# MYTHOS — Museu dos Deuses
+# MYTHOS
 
 Aplicativo Android nativo (Kotlin + Jetpack Compose) com autenticação no **Firebase
 Authentication** e dados do tema no **Cloud Firestore**.
