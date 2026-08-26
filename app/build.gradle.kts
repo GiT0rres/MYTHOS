@@ -6,20 +6,6 @@ plugins {
 }
 
 
-dependencies {
-        // Import the Firebase BoM
-        implementation(platform("com.google.firebase:firebase-bom:34.18.0"))
-
-
-        // TODO: Add the dependencies for Firebase products you want to use
-        // When using the BoM, don't specify versions in Firebase dependencies
-        implementation("com.google.firebase:firebase-analytics")
-
-
-        // Add the dependencies for any other desired Firebase products
-        // https://firebase.google.com/docs/android/setup#available-libraries
-}
-
 android {
     namespace = "com.example.mythos"
     compileSdk = 34
@@ -71,9 +57,10 @@ dependencies {
 
     implementation("androidx.navigation:navigation-compose:2.8.2")
 
-    // Firebase
-    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    // Firebase (BoM único — não especifique versões nas libs abaixo)
+    implementation(platform("com.google.firebase:firebase-bom:34.18.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-analytics")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
 }

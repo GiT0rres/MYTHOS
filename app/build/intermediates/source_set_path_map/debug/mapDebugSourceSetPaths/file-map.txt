@@ -1,73 +1,73 @@
-com.example.mythos.app-runtime-saveable-release-0 C:\Users\Admin\.gradle\caches\8.9\transforms\02e312c3ccf1ebc4362e25f4cdeb6e66\transformed\runtime-saveable-release\res
-com.example.mythos.app-runtime-release-1 C:\Users\Admin\.gradle\caches\8.9\transforms\05e2818ac5dd3032bf78fb6e60e980c0\transformed\runtime-release\res
-com.example.mythos.app-core-runtime-2.2.0-2 C:\Users\Admin\.gradle\caches\8.9\transforms\0806f484d2d0af6f7e6792974964243e\transformed\core-runtime-2.2.0\res
-com.example.mythos.app-emoji2-1.3.0-3 C:\Users\Admin\.gradle\caches\8.9\transforms\0d887797d2acca8ca2bef8150d11e21a\transformed\emoji2-1.3.0\res
-com.example.mythos.app-material3-release-4 C:\Users\Admin\.gradle\caches\8.9\transforms\103aedcf49f0e7716748fb6c1ba9509d\transformed\material3-release\res
-com.example.mythos.app-profileinstaller-1.3.1-5 C:\Users\Admin\.gradle\caches\8.9\transforms\14e3a499497d9af16365e2221d34e5b7\transformed\profileinstaller-1.3.1\res
-com.example.mythos.app-datastore-release-6 C:\Users\Admin\.gradle\caches\8.9\transforms\1528bcf1170f8f8bd51a113c1f69414d\transformed\datastore-release\res
-com.example.mythos.app-savedstate-ktx-1.2.1-7 C:\Users\Admin\.gradle\caches\8.9\transforms\15f6d4f4fa5b91a27a392ff911d1d995\transformed\savedstate-ktx-1.2.1\res
-com.example.mythos.app-foundation-layout-release-8 C:\Users\Admin\.gradle\caches\8.9\transforms\18fcf32e137fc6d5c5b43869d9795b42\transformed\foundation-layout-release\res
-com.example.mythos.app-graphics-path-1.0.1-9 C:\Users\Admin\.gradle\caches\8.9\transforms\1b48eba8041b422e7557b4f52eb682ee\transformed\graphics-path-1.0.1\res
-com.example.mythos.app-navigation-compose-2.8.2-10 C:\Users\Admin\.gradle\caches\8.9\transforms\1d86009758ec1b0356208f986a6dc2f9\transformed\navigation-compose-2.8.2\res
-com.example.mythos.app-ui-graphics-release-11 C:\Users\Admin\.gradle\caches\8.9\transforms\20e02ed633d35dfb5cbba76f5789f29f\transformed\ui-graphics-release\res
-com.example.mythos.app-lifecycle-livedata-core-ktx-2.8.6-12 C:\Users\Admin\.gradle\caches\8.9\transforms\29a9726d34504d404cbdeec890c4b394\transformed\lifecycle-livedata-core-ktx-2.8.6\res
-com.example.mythos.app-play-services-auth-20.7.0-13 C:\Users\Admin\.gradle\caches\8.9\transforms\2c0a62e701d1a994bc255521e819c579\transformed\play-services-auth-20.7.0\res
-com.example.mythos.app-lifecycle-livedata-core-2.8.6-14 C:\Users\Admin\.gradle\caches\8.9\transforms\2cbf567e9844d5a939cfd8363b292f25\transformed\lifecycle-livedata-core-2.8.6\res
-com.example.mythos.app-annotation-experimental-1.4.1-15 C:\Users\Admin\.gradle\caches\8.9\transforms\30572776aa12e0932878031ff7a47aa6\transformed\annotation-experimental-1.4.1\res
-com.example.mythos.app-startup-runtime-1.1.1-16 C:\Users\Admin\.gradle\caches\8.9\transforms\39ef84c632f03f636f54cdfe69f0d29a\transformed\startup-runtime-1.1.1\res
-com.example.mythos.app-navigation-common-ktx-2.8.2-17 C:\Users\Admin\.gradle\caches\8.9\transforms\49dd2ef071a2d3be36185f70e5788f89\transformed\navigation-common-ktx-2.8.2\res
-com.example.mythos.app-lifecycle-runtime-ktx-release-18 C:\Users\Admin\.gradle\caches\8.9\transforms\4d7b45e7d5b5a9e5a3974e084a0831f3\transformed\lifecycle-runtime-ktx-release\res
-com.example.mythos.app-activity-compose-1.9.2-19 C:\Users\Admin\.gradle\caches\8.9\transforms\4f4697bbf0e83ca16ea4d7eb3cb824ba\transformed\activity-compose-1.9.2\res
-com.example.mythos.app-animation-core-release-20 C:\Users\Admin\.gradle\caches\8.9\transforms\502ae56d88b204d7a7e87ccbfb12736d\transformed\animation-core-release\res
-com.example.mythos.app-ui-geometry-release-21 C:\Users\Admin\.gradle\caches\8.9\transforms\5b36a9ac2b7dabd1823d334821e39b2a\transformed\ui-geometry-release\res
-com.example.mythos.app-ui-tooling-release-22 C:\Users\Admin\.gradle\caches\8.9\transforms\5c357760be4efbee5fb803673f86c816\transformed\ui-tooling-release\res
-com.example.mythos.app-activity-ktx-1.9.2-23 C:\Users\Admin\.gradle\caches\8.9\transforms\637329d0a12e3acfb064534cb97a7198\transformed\activity-ktx-1.9.2\res
-com.example.mythos.app-lifecycle-viewmodel-ktx-2.8.6-24 C:\Users\Admin\.gradle\caches\8.9\transforms\6b7be53c45abc73203899f312f430526\transformed\lifecycle-viewmodel-ktx-2.8.6\res
-com.example.mythos.app-ui-tooling-data-release-25 C:\Users\Admin\.gradle\caches\8.9\transforms\6c2a5dc67af284ae12d0df690c246b8e\transformed\ui-tooling-data-release\res
-com.example.mythos.app-ads-adservices-1.1.0-beta11-26 C:\Users\Admin\.gradle\caches\8.9\transforms\72f1d2cbd89f8d59ac79167a4437687f\transformed\ads-adservices-1.1.0-beta11\res
-com.example.mythos.app-navigation-runtime-ktx-2.8.2-27 C:\Users\Admin\.gradle\caches\8.9\transforms\737b85fd84f2c900b464e9e415126593\transformed\navigation-runtime-ktx-2.8.2\res
-com.example.mythos.app-ui-text-release-28 C:\Users\Admin\.gradle\caches\8.9\transforms\75dd7f03a24fbcf3513b82fff396847e\transformed\ui-text-release\res
-com.example.mythos.app-core-1.13.1-29 C:\Users\Admin\.gradle\caches\8.9\transforms\7670504baed46b3bafcc308737115939\transformed\core-1.13.1\res
-com.example.mythos.app-lifecycle-runtime-release-30 C:\Users\Admin\.gradle\caches\8.9\transforms\8493f7c5fdcca68c72a933c3595e6346\transformed\lifecycle-runtime-release\res
-com.example.mythos.app-ui-tooling-preview-release-31 C:\Users\Admin\.gradle\caches\8.9\transforms\8944a855410bdb08bfd852cb58b01679\transformed\ui-tooling-preview-release\res
-com.example.mythos.app-datastore-preferences-release-32 C:\Users\Admin\.gradle\caches\8.9\transforms\916a86ee53789284d258e75f5a79ea7c\transformed\datastore-preferences-release\res
-com.example.mythos.app-foundation-release-33 C:\Users\Admin\.gradle\caches\8.9\transforms\94c92294dcc9a804f611f6c3f29874b5\transformed\foundation-release\res
-com.example.mythos.app-runtime-livedata-1.7.3-34 C:\Users\Admin\.gradle\caches\8.9\transforms\95038ae6bc8f76d7d4645b93c2fd2dee\transformed\runtime-livedata-1.7.3\res
-com.example.mythos.app-lifecycle-process-2.8.6-35 C:\Users\Admin\.gradle\caches\8.9\transforms\964f201f25d12a4d6ae4c2197406d011\transformed\lifecycle-process-2.8.6\res
-com.example.mythos.app-savedstate-1.2.1-36 C:\Users\Admin\.gradle\caches\8.9\transforms\972ace7ae64e0f60745ba939396980ed\transformed\savedstate-1.2.1\res
-com.example.mythos.app-material-icons-extended-release-37 C:\Users\Admin\.gradle\caches\8.9\transforms\9a254a3df3439fa1d9d4e29b6348a537\transformed\material-icons-extended-release\res
-com.example.mythos.app-credentials-1.2.0-rc01-38 C:\Users\Admin\.gradle\caches\8.9\transforms\9e8eaf6b9ff99cc189d1f7a9155d4a7a\transformed\credentials-1.2.0-rc01\res
-com.example.mythos.app-navigation-common-2.8.2-39 C:\Users\Admin\.gradle\caches\8.9\transforms\9e95148930e62e0bafe0ae40c5302e9f\transformed\navigation-common-2.8.2\res
-com.example.mythos.app-lifecycle-viewmodel-release-40 C:\Users\Admin\.gradle\caches\8.9\transforms\9fccb963d7c6091266d549cccaada2af\transformed\lifecycle-viewmodel-release\res
-com.example.mythos.app-lifecycle-viewmodel-savedstate-2.8.6-41 C:\Users\Admin\.gradle\caches\8.9\transforms\a1cb4c2c918cfed4cb4896ed697b1afa\transformed\lifecycle-viewmodel-savedstate-2.8.6\res
-com.example.mythos.app-ui-util-release-42 C:\Users\Admin\.gradle\caches\8.9\transforms\a61f5723897d61556484d575e6e2eea6\transformed\ui-util-release\res
-com.example.mythos.app-material-ripple-release-43 C:\Users\Admin\.gradle\caches\8.9\transforms\abf9775241a477e30c8a1a9dadbaaae6\transformed\material-ripple-release\res
-com.example.mythos.app-datastore-preferences-core-release-44 C:\Users\Admin\.gradle\caches\8.9\transforms\afacc7fd23eeb45e5aaa7436a92e8081\transformed\datastore-preferences-core-release\res
-com.example.mythos.app-animation-release-45 C:\Users\Admin\.gradle\caches\8.9\transforms\bcf58f174ed50727ac9eb1be960933d2\transformed\animation-release\res
-com.example.mythos.app-browser-1.4.0-46 C:\Users\Admin\.gradle\caches\8.9\transforms\be45294d5d96ea5aa2ad199c74485160\transformed\browser-1.4.0\res
-com.example.mythos.app-ui-release-47 C:\Users\Admin\.gradle\caches\8.9\transforms\c2d3f766a2b7b1e7d941cded535a6e15\transformed\ui-release\res
-com.example.mythos.app-datastore-core-release-48 C:\Users\Admin\.gradle\caches\8.9\transforms\c5419fd6bfb850bef0a3cdf2aa628aca\transformed\datastore-core-release\res
-com.example.mythos.app-credentials-play-services-auth-1.2.0-rc01-49 C:\Users\Admin\.gradle\caches\8.9\transforms\c7df1d2cf2688db5b716c211e0bc309e\transformed\credentials-play-services-auth-1.2.0-rc01\res
-com.example.mythos.app-firebase-common-22.2.0-50 C:\Users\Admin\.gradle\caches\8.9\transforms\c97833df5f247b7c7f2b35a9090df8c8\transformed\firebase-common-22.2.0\res
-com.example.mythos.app-lifecycle-viewmodel-compose-release-51 C:\Users\Admin\.gradle\caches\8.9\transforms\cb9a1db511a9298ca472dfde2500e77f\transformed\lifecycle-viewmodel-compose-release\res
-com.example.mythos.app-material-release-52 C:\Users\Admin\.gradle\caches\8.9\transforms\cd35f3b90b2dabc5d022ca6c8ac393ba\transformed\material-release\res
-com.example.mythos.app-core-common-2.0.3-53 C:\Users\Admin\.gradle\caches\8.9\transforms\cd74f174a41ff7b6ab4c84b6d5f7c702\transformed\core-common-2.0.3\res
-com.example.mythos.app-core-ktx-1.13.1-54 C:\Users\Admin\.gradle\caches\8.9\transforms\d33e20bf1a7a94d11fd35d4fe809bccc\transformed\core-ktx-1.13.1\res
-com.example.mythos.app-customview-poolingcontainer-1.0.0-55 C:\Users\Admin\.gradle\caches\8.9\transforms\d66bd87425b349921afed7956c783968\transformed\customview-poolingcontainer-1.0.0\res
-com.example.mythos.app-activity-1.9.2-56 C:\Users\Admin\.gradle\caches\8.9\transforms\d676e1d5024567c63d27be64e89b9894\transformed\activity-1.9.2\res
-com.example.mythos.app-ui-unit-release-57 C:\Users\Admin\.gradle\caches\8.9\transforms\db07702f23797e885ade859cba896bf5\transformed\ui-unit-release\res
-com.example.mythos.app-play-services-basement-18.9.0-58 C:\Users\Admin\.gradle\caches\8.9\transforms\db8e508b878637a97e18e03fdddddaad\transformed\play-services-basement-18.9.0\res
-com.example.mythos.app-navigation-runtime-2.8.2-59 C:\Users\Admin\.gradle\caches\8.9\transforms\dbfc38fb8dd7d1ad9dc01a7be7e38562\transformed\navigation-runtime-2.8.2\res
-com.example.mythos.app-ads-adservices-java-1.1.0-beta11-60 C:\Users\Admin\.gradle\caches\8.9\transforms\e01c3924689be75b335326bfa1a21aa9\transformed\ads-adservices-java-1.1.0-beta11\res
-com.example.mythos.app-material-icons-core-release-61 C:\Users\Admin\.gradle\caches\8.9\transforms\e1b66b4d606322af9db746cb9d9b4dc8\transformed\material-icons-core-release\res
-com.example.mythos.app-lifecycle-runtime-compose-release-62 C:\Users\Admin\.gradle\caches\8.9\transforms\e705ddeb73e2e469fd643de72459e6c3\transformed\lifecycle-runtime-compose-release\res
-com.example.mythos.app-play-services-base-18.9.0-63 C:\Users\Admin\.gradle\caches\8.9\transforms\f3c41ed57571db8f15b6ae054edb16f2\transformed\play-services-base-18.9.0\res
-com.example.mythos.app-lifecycle-livedata-2.8.6-64 C:\Users\Admin\.gradle\caches\8.9\transforms\fa6f0cc72b1feaecaa6adc38093df32f\transformed\lifecycle-livedata-2.8.6\res
-com.example.mythos.app-pngs-65 C:\Users\Admin\Documents\GitHub\MYTHOS\app\build\generated\res\pngs\debug
-com.example.mythos.app-res-66 C:\Users\Admin\Documents\GitHub\MYTHOS\app\build\generated\res\processDebugGoogleServices
-com.example.mythos.app-resValues-67 C:\Users\Admin\Documents\GitHub\MYTHOS\app\build\generated\res\resValues\debug
-com.example.mythos.app-packageDebugResources-68 C:\Users\Admin\Documents\GitHub\MYTHOS\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.mythos.app-packageDebugResources-69 C:\Users\Admin\Documents\GitHub\MYTHOS\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.mythos.app-debug-70 C:\Users\Admin\Documents\GitHub\MYTHOS\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.mythos.app-debug-71 C:\Users\Admin\Documents\GitHub\MYTHOS\app\src\debug\res
-com.example.mythos.app-main-72 C:\Users\Admin\Documents\GitHub\MYTHOS\app\src\main\res
+com.example.mythos.app-runtime-saveable-release-0 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\02e312c3ccf1ebc4362e25f4cdeb6e66\transformed\runtime-saveable-release\res
+com.example.mythos.app-runtime-release-1 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\05e2818ac5dd3032bf78fb6e60e980c0\transformed\runtime-release\res
+com.example.mythos.app-core-runtime-2.2.0-2 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\0806f484d2d0af6f7e6792974964243e\transformed\core-runtime-2.2.0\res
+com.example.mythos.app-emoji2-1.3.0-3 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\0d887797d2acca8ca2bef8150d11e21a\transformed\emoji2-1.3.0\res
+com.example.mythos.app-material3-release-4 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\103aedcf49f0e7716748fb6c1ba9509d\transformed\material3-release\res
+com.example.mythos.app-profileinstaller-1.3.1-5 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\14e3a499497d9af16365e2221d34e5b7\transformed\profileinstaller-1.3.1\res
+com.example.mythos.app-datastore-release-6 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\1528bcf1170f8f8bd51a113c1f69414d\transformed\datastore-release\res
+com.example.mythos.app-savedstate-ktx-1.2.1-7 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\15f6d4f4fa5b91a27a392ff911d1d995\transformed\savedstate-ktx-1.2.1\res
+com.example.mythos.app-foundation-layout-release-8 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\18fcf32e137fc6d5c5b43869d9795b42\transformed\foundation-layout-release\res
+com.example.mythos.app-graphics-path-1.0.1-9 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\1b48eba8041b422e7557b4f52eb682ee\transformed\graphics-path-1.0.1\res
+com.example.mythos.app-navigation-compose-2.8.2-10 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\1d86009758ec1b0356208f986a6dc2f9\transformed\navigation-compose-2.8.2\res
+com.example.mythos.app-ui-graphics-release-11 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\20e02ed633d35dfb5cbba76f5789f29f\transformed\ui-graphics-release\res
+com.example.mythos.app-lifecycle-livedata-core-ktx-2.8.6-12 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\29a9726d34504d404cbdeec890c4b394\transformed\lifecycle-livedata-core-ktx-2.8.6\res
+com.example.mythos.app-play-services-auth-20.7.0-13 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\2c0a62e701d1a994bc255521e819c579\transformed\play-services-auth-20.7.0\res
+com.example.mythos.app-lifecycle-livedata-core-2.8.6-14 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\2cbf567e9844d5a939cfd8363b292f25\transformed\lifecycle-livedata-core-2.8.6\res
+com.example.mythos.app-annotation-experimental-1.4.1-15 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\30572776aa12e0932878031ff7a47aa6\transformed\annotation-experimental-1.4.1\res
+com.example.mythos.app-startup-runtime-1.1.1-16 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\39ef84c632f03f636f54cdfe69f0d29a\transformed\startup-runtime-1.1.1\res
+com.example.mythos.app-navigation-common-ktx-2.8.2-17 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\49dd2ef071a2d3be36185f70e5788f89\transformed\navigation-common-ktx-2.8.2\res
+com.example.mythos.app-lifecycle-runtime-ktx-release-18 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\4d7b45e7d5b5a9e5a3974e084a0831f3\transformed\lifecycle-runtime-ktx-release\res
+com.example.mythos.app-activity-compose-1.9.2-19 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\4f4697bbf0e83ca16ea4d7eb3cb824ba\transformed\activity-compose-1.9.2\res
+com.example.mythos.app-animation-core-release-20 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\502ae56d88b204d7a7e87ccbfb12736d\transformed\animation-core-release\res
+com.example.mythos.app-ui-geometry-release-21 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\5b36a9ac2b7dabd1823d334821e39b2a\transformed\ui-geometry-release\res
+com.example.mythos.app-ui-tooling-release-22 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\5c357760be4efbee5fb803673f86c816\transformed\ui-tooling-release\res
+com.example.mythos.app-activity-ktx-1.9.2-23 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\637329d0a12e3acfb064534cb97a7198\transformed\activity-ktx-1.9.2\res
+com.example.mythos.app-lifecycle-viewmodel-ktx-2.8.6-24 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\6b7be53c45abc73203899f312f430526\transformed\lifecycle-viewmodel-ktx-2.8.6\res
+com.example.mythos.app-ui-tooling-data-release-25 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\6c2a5dc67af284ae12d0df690c246b8e\transformed\ui-tooling-data-release\res
+com.example.mythos.app-ads-adservices-1.1.0-beta11-26 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\72f1d2cbd89f8d59ac79167a4437687f\transformed\ads-adservices-1.1.0-beta11\res
+com.example.mythos.app-navigation-runtime-ktx-2.8.2-27 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\737b85fd84f2c900b464e9e415126593\transformed\navigation-runtime-ktx-2.8.2\res
+com.example.mythos.app-ui-text-release-28 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\75dd7f03a24fbcf3513b82fff396847e\transformed\ui-text-release\res
+com.example.mythos.app-core-1.13.1-29 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\7670504baed46b3bafcc308737115939\transformed\core-1.13.1\res
+com.example.mythos.app-lifecycle-runtime-release-30 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\8493f7c5fdcca68c72a933c3595e6346\transformed\lifecycle-runtime-release\res
+com.example.mythos.app-ui-tooling-preview-release-31 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\8944a855410bdb08bfd852cb58b01679\transformed\ui-tooling-preview-release\res
+com.example.mythos.app-datastore-preferences-release-32 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\916a86ee53789284d258e75f5a79ea7c\transformed\datastore-preferences-release\res
+com.example.mythos.app-foundation-release-33 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\94c92294dcc9a804f611f6c3f29874b5\transformed\foundation-release\res
+com.example.mythos.app-runtime-livedata-1.7.3-34 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\95038ae6bc8f76d7d4645b93c2fd2dee\transformed\runtime-livedata-1.7.3\res
+com.example.mythos.app-lifecycle-process-2.8.6-35 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\964f201f25d12a4d6ae4c2197406d011\transformed\lifecycle-process-2.8.6\res
+com.example.mythos.app-savedstate-1.2.1-36 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\972ace7ae64e0f60745ba939396980ed\transformed\savedstate-1.2.1\res
+com.example.mythos.app-material-icons-extended-release-37 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\9a254a3df3439fa1d9d4e29b6348a537\transformed\material-icons-extended-release\res
+com.example.mythos.app-credentials-1.2.0-rc01-38 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\9e8eaf6b9ff99cc189d1f7a9155d4a7a\transformed\credentials-1.2.0-rc01\res
+com.example.mythos.app-navigation-common-2.8.2-39 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\9e95148930e62e0bafe0ae40c5302e9f\transformed\navigation-common-2.8.2\res
+com.example.mythos.app-lifecycle-viewmodel-release-40 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\9fccb963d7c6091266d549cccaada2af\transformed\lifecycle-viewmodel-release\res
+com.example.mythos.app-lifecycle-viewmodel-savedstate-2.8.6-41 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\a1cb4c2c918cfed4cb4896ed697b1afa\transformed\lifecycle-viewmodel-savedstate-2.8.6\res
+com.example.mythos.app-ui-util-release-42 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\a61f5723897d61556484d575e6e2eea6\transformed\ui-util-release\res
+com.example.mythos.app-material-ripple-release-43 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\abf9775241a477e30c8a1a9dadbaaae6\transformed\material-ripple-release\res
+com.example.mythos.app-datastore-preferences-core-release-44 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\afacc7fd23eeb45e5aaa7436a92e8081\transformed\datastore-preferences-core-release\res
+com.example.mythos.app-animation-release-45 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\bcf58f174ed50727ac9eb1be960933d2\transformed\animation-release\res
+com.example.mythos.app-browser-1.4.0-46 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\be45294d5d96ea5aa2ad199c74485160\transformed\browser-1.4.0\res
+com.example.mythos.app-ui-release-47 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\c2d3f766a2b7b1e7d941cded535a6e15\transformed\ui-release\res
+com.example.mythos.app-datastore-core-release-48 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\c5419fd6bfb850bef0a3cdf2aa628aca\transformed\datastore-core-release\res
+com.example.mythos.app-credentials-play-services-auth-1.2.0-rc01-49 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\c7df1d2cf2688db5b716c211e0bc309e\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.example.mythos.app-firebase-common-22.2.0-50 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\c97833df5f247b7c7f2b35a9090df8c8\transformed\firebase-common-22.2.0\res
+com.example.mythos.app-lifecycle-viewmodel-compose-release-51 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\cb9a1db511a9298ca472dfde2500e77f\transformed\lifecycle-viewmodel-compose-release\res
+com.example.mythos.app-material-release-52 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\cd35f3b90b2dabc5d022ca6c8ac393ba\transformed\material-release\res
+com.example.mythos.app-core-common-2.0.3-53 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\cd74f174a41ff7b6ab4c84b6d5f7c702\transformed\core-common-2.0.3\res
+com.example.mythos.app-core-ktx-1.13.1-54 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\d33e20bf1a7a94d11fd35d4fe809bccc\transformed\core-ktx-1.13.1\res
+com.example.mythos.app-customview-poolingcontainer-1.0.0-55 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\d66bd87425b349921afed7956c783968\transformed\customview-poolingcontainer-1.0.0\res
+com.example.mythos.app-activity-1.9.2-56 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\d676e1d5024567c63d27be64e89b9894\transformed\activity-1.9.2\res
+com.example.mythos.app-ui-unit-release-57 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\db07702f23797e885ade859cba896bf5\transformed\ui-unit-release\res
+com.example.mythos.app-play-services-basement-18.9.0-58 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\db8e508b878637a97e18e03fdddddaad\transformed\play-services-basement-18.9.0\res
+com.example.mythos.app-navigation-runtime-2.8.2-59 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\dbfc38fb8dd7d1ad9dc01a7be7e38562\transformed\navigation-runtime-2.8.2\res
+com.example.mythos.app-ads-adservices-java-1.1.0-beta11-60 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\e01c3924689be75b335326bfa1a21aa9\transformed\ads-adservices-java-1.1.0-beta11\res
+com.example.mythos.app-material-icons-core-release-61 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\e1b66b4d606322af9db746cb9d9b4dc8\transformed\material-icons-core-release\res
+com.example.mythos.app-lifecycle-runtime-compose-release-62 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\e705ddeb73e2e469fd643de72459e6c3\transformed\lifecycle-runtime-compose-release\res
+com.example.mythos.app-play-services-base-18.9.0-63 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\f3c41ed57571db8f15b6ae054edb16f2\transformed\play-services-base-18.9.0\res
+com.example.mythos.app-lifecycle-livedata-2.8.6-64 C:\Users\FATEC ZONA LESTE\.gradle\caches\8.9\transforms\fa6f0cc72b1feaecaa6adc38093df32f\transformed\lifecycle-livedata-2.8.6\res
+com.example.mythos.app-pngs-65 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\build\generated\res\pngs\debug
+com.example.mythos.app-res-66 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\build\generated\res\processDebugGoogleServices
+com.example.mythos.app-resValues-67 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\build\generated\res\resValues\debug
+com.example.mythos.app-packageDebugResources-68 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.mythos.app-packageDebugResources-69 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.mythos.app-debug-70 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.mythos.app-debug-71 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\src\debug\res
+com.example.mythos.app-main-72 C:\Users\FATEC ZONA LESTE\Downloads\mythos\app\src\main\res

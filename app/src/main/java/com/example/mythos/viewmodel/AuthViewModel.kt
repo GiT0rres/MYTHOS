@@ -7,7 +7,15 @@ import com.google.firebase.auth.FirebaseAuth
 
 class AuthViewModel : ViewModel() {
 
-    private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+    // FirebaseAuth.getInstance() lança IllegalStateException se o FirebaseApp nunca foi
+    // inicializado — é exatamente o que acontece no sandbox do Compose Preview (Layoutlib),
+    // que não roda o ContentProvider de auto-init do Firebase. Guardando com try/catch, o
+    // ViewModel continua instanciável nesse ambiente, apenas operando como "visitante".
+    private val auth: FirebaseAuth? = try {
+        FirebaseAuth.getInstance()
+    } catch (e: IllegalStateException) {
+        null
+    }
 
     private val _authState = MutableLiveData<AuthState>()
     val authState: LiveData<AuthState> = _authState
@@ -17,7 +25,7 @@ class AuthViewModel : ViewModel() {
     }
 
     fun checkAuthStatus() {
-        _authState.value = if (auth.currentUser == null) {
+        _authState.value = if (auth?.currentUser == null) {
             AuthState.Unauthenticated
         } else {
             AuthState.Authenticated
@@ -25,19 +33,23 @@ class AuthViewModel : ViewModel() {
     }
 
     val userEmail: String
-        get() = auth.currentUser?.email ?: "visitante"
+        get() = auth?.currentUser?.email ?: "visitante"
 
     val userName: String
-        get() = auth.currentUser?.displayName?.takeIf { it.isNotBlank() }
+        get() = auth?.currentUser?.displayName?.takeIf { it.isNotBlank() }
             ?: userEmail.substringBefore("@")
 
     fun login(email: String, password: String) {
+        val firebaseAuth = auth ?: run {
+            _authState.value = AuthState.Error("Firebase indisponível neste ambiente.")
+            return
+        }
         if (email.isBlank() || password.isBlank()) {
             _authState.value = AuthState.Error("Preencha e-mail e senha.")
             return
         }
         _authState.value = AuthState.Loading
-        auth.signInWithEmailAndPassword(email.trim(), password)
+        firebaseAuth.signInWithEmailAndPassword(email.trim(), password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     _authState.value = AuthState.Authenticated
@@ -48,7 +60,11 @@ class AuthViewModel : ViewModel() {
             }
     }
 
-    fun signup(name: String, email: String, password: String, confirmPassword: String) {
+    fun signup(name : String, email: String, password: String, confirmPassword: String) {
+        val firebaseAuth = auth ?: run {
+            _authState.value = AuthState.Error("Firebase indisponível neste ambiente.")
+            return
+        }
         if (name.isBlank() || email.isBlank() || password.isBlank()) {
             _authState.value = AuthState.Error("Preencha todos os campos.")
             return
@@ -62,13 +78,13 @@ class AuthViewModel : ViewModel() {
             return
         }
         _authState.value = AuthState.Loading
-        auth.createUserWithEmailAndPassword(email.trim(), password)
+        firebaseAuth.createUserWithEmailAndPassword(email.trim(), password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val request = com.google.firebase.auth.UserProfileChangeRequest.Builder()
                         .setDisplayName(name.trim())
                         .build()
-                    auth.currentUser?.updateProfile(request)
+                    firebaseAuth.currentUser?.updateProfile(request)
                     _authState.value = AuthState.Authenticated
                 } else {
                     _authState.value =
@@ -78,11 +94,15 @@ class AuthViewModel : ViewModel() {
     }
 
     fun resetPassword(email: String) {
+        val firebaseAuth = auth ?: run {
+            _authState.value = AuthState.Error("Firebase indisponível neste ambiente.")
+            return
+        }
         if (email.isBlank()) {
             _authState.value = AuthState.Error("Informe o e-mail para recuperar a senha.")
             return
         }
-        auth.sendPasswordResetEmail(email.trim())
+        firebaseAuth.sendPasswordResetEmail(email.trim())
             .addOnCompleteListener { task ->
                 _authState.value = if (task.isSuccessful) {
                     AuthState.Message("E-mail de recuperação enviado.")
@@ -93,7 +113,7 @@ class AuthViewModel : ViewModel() {
     }
 
     fun signout() {
-        auth.signOut()
+        auth?.signOut()
         _authState.value = AuthState.Unauthenticated
     }
 }

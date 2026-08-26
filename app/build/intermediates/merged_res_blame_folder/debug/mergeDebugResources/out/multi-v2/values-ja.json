@@ -4,7 +4,7 @@
             "outputFile": "com.example.mythos.app-mergeDebugResources-68:/values-ja/values-ja.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\db8e508b878637a97e18e03fdddddaad\\transformed\\play-services-basement-18.9.0\\res\\values-ja\\values.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\db8e508b878637a97e18e03fdddddaad\\transformed\\play-services-basement-18.9.0\\res\\values-ja\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\9e8eaf6b9ff99cc189d1f7a9155d4a7a\\transformed\\credentials-1.2.0-rc01\\res\\values-ja\\values-ja.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,164",
-                        "endColumns": "108,110",
-                        "endOffsets": "159,270"
-                    },
-                    "to": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "105,214",
-                        "endColumns": "108,110",
-                        "endOffsets": "209,320"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\f3c41ed57571db8f15b6ae054edb16f2\\transformed\\play-services-base-18.9.0\\res\\values-ja\\values.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\f3c41ed57571db8f15b6ae054edb16f2\\transformed\\play-services-base-18.9.0\\res\\values-ja\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\94c92294dcc9a804f611f6c3f29874b5\\transformed\\foundation-release\\res\\values-ja\\values-ja.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\94c92294dcc9a804f611f6c3f29874b5\\transformed\\foundation-release\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -72,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\103aedcf49f0e7716748fb6c1ba9509d\\transformed\\material3-release\\res\\values-ja\\values-ja.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\103aedcf49f0e7716748fb6c1ba9509d\\transformed\\material3-release\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,24 +72,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\7670504baed46b3bafcc308737115939\\transformed\\core-1.13.1\\res\\values-ja\\values-ja.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\9e8eaf6b9ff99cc189d1f7a9155d4a7a\\transformed\\credentials-1.2.0-rc01\\res\\values-ja\\values-ja.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,147,247,341,437,530,623,724",
-                        "endColumns": "91,99,93,95,92,92,100,100",
-                        "endOffsets": "142,242,336,432,525,618,719,820"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,110",
+                        "endOffsets": "159,270"
                     },
                     "to": {
-                        "startLines": "4,5,6,7,8,9,10,105",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "325,417,517,611,707,800,893,10222",
-                        "endColumns": "91,99,93,95,92,92,100,100",
-                        "endOffsets": "412,512,606,702,795,888,989,10318"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,214",
+                        "endColumns": "108,110",
+                        "endOffsets": "209,320"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\c2d3f766a2b7b1e7d941cded535a6e15\\transformed\\ui-release\\res\\values-ja\\values-ja.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\c2d3f766a2b7b1e7d941cded535a6e15\\transformed\\ui-release\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -123,7 +106,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\be45294d5d96ea5aa2ad199c74485160\\transformed\\browser-1.4.0\\res\\values-ja\\values-ja.xml",
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\7670504baed46b3bafcc308737115939\\transformed\\core-1.13.1\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,147,247,341,437,530,623,724",
+                        "endColumns": "91,99,93,95,92,92,100,100",
+                        "endOffsets": "142,242,336,432,525,618,719,820"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,105",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "325,417,517,611,707,800,893,10222",
+                        "endColumns": "91,99,93,95,92,92,100,100",
+                        "endOffsets": "412,512,606,702,795,888,989,10318"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\be45294d5d96ea5aa2ad199c74485160\\transformed\\browser-1.4.0\\res\\values-ja\\values-ja.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
