@@ -2,6 +2,7 @@ package com.example.mythos.pages
 
 import com.example.mythos.components.*
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -29,8 +30,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.mythos.R
 import com.example.mythos.model.Deity
 import com.example.mythos.ui.theme.MythosBackground
 import com.example.mythos.ui.theme.MythosBorder
@@ -55,7 +59,12 @@ fun ComparePage(
                 .verticalScroll(rememberScrollState())
                 .padding(bottom = 24.dp)
         ) {
-            Box(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            ) {
                 Icon(
                     imageVector = Icons.Filled.ArrowBack,
                     contentDescription = "Voltar",
@@ -65,7 +74,10 @@ fun ComparePage(
                         .size(24.dp)
                         .clickableNoRipple(onBack)
                 )
-                Column(modifier = Modifier.align(Alignment.Center)) {
+
+                Column(
+                    modifier = Modifier.align(Alignment.Center)
+                ) {
                     SectionTitle(
                         "COMPARAÇÃO",
                         "Veja semelhanças entre deuses de diferentes culturas"
@@ -88,6 +100,7 @@ fun ComparePage(
                     modifier = Modifier.weight(1f)
                 )
             }
+
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -102,34 +115,70 @@ fun ComparePage(
                         .border(1.dp, MythosGold, CircleShape),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text("VS", color = MythosGold, style = MaterialTheme.typography.labelLarge)
+                    Text(
+                        "VS",
+                        color = MythosGold,
+                        style = MaterialTheme.typography.labelLarge
+                    )
                 }
             }
 
             Spacer(Modifier.height(16.dp))
 
-            Column(modifier = Modifier.padding(horizontal = 16.dp)) {
-                CompareRow("PODER", first.power, second.power)
-                CompareRow("SÍMBOLO", first.symbol, second.symbol)
-                CompareRow("DOMÍNIO", first.domain, second.domain)
-                CompareRow("REPRESENTAÇÃO", first.artwork, second.artwork)
+            Column(
+                modifier = Modifier.padding(horizontal = 16.dp)
+            ) {
+
+                CompareRow(
+                    "PODER",
+                    first.power,
+                    second.power
+                )
+
+                CompareRow(
+                    "SÍMBOLO",
+                    first.symbol,
+                    second.symbol
+                )
+
+                CompareRow(
+                    "DOMÍNIO",
+                    first.domain,
+                    second.domain
+                )
+
+                CompareRow(
+                    "REPRESENTAÇÃO",
+                    first.artwork,
+                    second.artwork
+                )
 
                 Spacer(Modifier.height(16.dp))
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(10.dp))
                         .background(MythosSurface)
-                        .border(1.dp, MythosBorder, RoundedCornerShape(10.dp))
+                        .border(
+                            1.dp,
+                            MythosBorder,
+                            RoundedCornerShape(10.dp)
+                        )
                         .padding(16.dp)
                 ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+
                         Text(
                             "CURIOSIDADE",
                             color = MythosGold,
                             style = MaterialTheme.typography.labelLarge
                         )
+
                         Spacer(Modifier.height(6.dp))
+
                         Text(
                             curiosity,
                             color = MythosIvory,
@@ -140,18 +189,28 @@ fun ComparePage(
                 }
 
                 Spacer(Modifier.height(20.dp))
+
                 Text(
                     "TROCAR O SEGUNDO PERSONAGEM",
                     color = MythosGold,
                     style = MaterialTheme.typography.labelSmall
                 )
+
                 Spacer(Modifier.height(8.dp))
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    items(others.filter { it.id != first.id }) { deity ->
+
+                LazyRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    items(
+                        others.filter { it.id != first.id }
+                    ) { deity ->
+
                         FilterChipGold(
                             label = deity.name,
                             selected = deity.id == second.id
-                        ) { onSelectSecond(deity.id) }
+                        ) {
+                            onSelectSecond(deity.id)
+                        }
                     }
                 }
             }
@@ -160,15 +219,51 @@ fun ComparePage(
 }
 
 @Composable
-private fun CompareHeader(deity: Deity, modifier: Modifier = Modifier) {
-    Box(modifier = modifier.fillMaxWidth()) {
-        ArtworkFrame(name = deity.name, modifier = Modifier.fillMaxSize())
+private fun CompareHeader(
+    deity: Deity,
+    modifier: Modifier = Modifier
+) {
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(220.dp)
+            .clip(RoundedCornerShape(12.dp))
+    ) {
+
+        Image(
+            painter = painterResource(
+                id = getDeityImage(deity.id)
+            ),
+            contentDescription = "Imagem de ${deity.name}",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    androidx.compose.ui.graphics.Brush.verticalGradient(
+                        listOf(
+                            androidx.compose.ui.graphics.Color.Transparent,
+                            androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.75f)
+                        )
+                    )
+                )
+        )
+
         Column(
             modifier = Modifier
                 .align(Alignment.BottomStart)
                 .padding(12.dp)
         ) {
-            Text(deity.name, color = MythosIvory, style = MaterialTheme.typography.titleMedium)
+
+            Text(
+                deity.name,
+                color = MythosIvory,
+                style = MaterialTheme.typography.titleMedium
+            )
+
             Text(
                 "Mitologia ${deity.culture}",
                 color = MythosMuted,
@@ -178,9 +273,37 @@ private fun CompareHeader(deity: Deity, modifier: Modifier = Modifier) {
     }
 }
 
+private fun getDeityImage(id: String): Int {
+    return when (id.lowercase()) {
+
+        "zeus" -> R.drawable.zeus
+
+        "thor" -> R.drawable.thor
+
+        "jupiter" -> R.drawable.jupiter
+
+        "indra" -> R.drawable.indra
+
+        "hercules" -> R.drawable.hercules
+
+        "ra" -> R.drawable.ra
+
+        else -> R.drawable.zeus
+    }
+}
+
 @Composable
-private fun CompareRow(label: String, left: String, right: String) {
-    Column(modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
+private fun CompareRow(
+    label: String,
+    left: String,
+    right: String
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 8.dp)
+    ) {
+
         Text(
             label,
             color = MythosGold,
@@ -188,8 +311,13 @@ private fun CompareRow(label: String, left: String, right: String) {
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center
         )
+
         Spacer(Modifier.height(4.dp))
-        Row(modifier = Modifier.fillMaxWidth()) {
+
+        Row(
+            modifier = Modifier.fillMaxWidth()
+        ) {
+
             Text(
                 left,
                 color = MythosIvory,
@@ -197,6 +325,7 @@ private fun CompareRow(label: String, left: String, right: String) {
                 modifier = Modifier.weight(1f),
                 textAlign = TextAlign.Start
             )
+
             Text(
                 right,
                 color = MythosIvory,
@@ -205,7 +334,9 @@ private fun CompareRow(label: String, left: String, right: String) {
                 textAlign = TextAlign.End
             )
         }
+
         Spacer(Modifier.height(8.dp))
+
         Divider24()
     }
 }

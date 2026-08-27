@@ -2,6 +2,7 @@ package com.example.mythos.pages
 
 import com.example.mythos.components.*
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -27,9 +28,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.mythos.R
 import com.example.mythos.ui.theme.MythosBorder
 import com.example.mythos.ui.theme.MythosGold
 import com.example.mythos.ui.theme.MythosIvory
@@ -42,6 +48,7 @@ fun HomePage(
     onCategory: (String) -> Unit
 ) {
     MythosScaffoldBackground {
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -51,6 +58,7 @@ fun HomePage(
                 ),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
             MythosWordmark()
 
             Spacer(Modifier.height(16.dp))
@@ -64,13 +72,57 @@ fun HomePage(
 
             Spacer(Modifier.height(20.dp))
 
-            ArtworkFrame(
-                name = "Zeus",
+            // IMAGEM DE DESTAQUE DO ZEUS
+            Box(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
                     .clip(RoundedCornerShape(12.dp))
-            )
+            ) {
+
+                Image(
+                    painter = painterResource(
+                        id = R.drawable.zeus
+                    ),
+                    contentDescription = "Imagem de Zeus",
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+
+                // Gradiente para deixar o visual mais elegante
+                // e melhorar a leitura caso tenha texto sobre a imagem.
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(
+                            Brush.verticalGradient(
+                                listOf(
+                                    Color.Transparent,
+                                    Color.Black.copy(alpha = 0.65f)
+                                )
+                            )
+                        )
+                )
+
+                Column(
+                    modifier = Modifier
+                        .align(Alignment.BottomStart)
+                        .padding(16.dp)
+                ) {
+
+                    Text(
+                        "ZEUS",
+                        color = MythosIvory,
+                        style = MaterialTheme.typography.headlineSmall
+                    )
+
+                    Text(
+                        "Mitologia Grega",
+                        color = MythosGold,
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                }
+            }
 
             Spacer(Modifier.height(20.dp))
 
@@ -85,6 +137,7 @@ fun HomePage(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(10.dp)
             ) {
+
                 CategoryTile(
                     label = "DEUSES",
                     icon = Icons.Filled.AccountBalance,
@@ -141,6 +194,7 @@ private fun CategoryTile(
             .padding(vertical = 14.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
         Icon(
             icon,
             contentDescription = label,

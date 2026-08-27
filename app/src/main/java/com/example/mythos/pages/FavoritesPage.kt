@@ -30,16 +30,32 @@ fun FavoritesPage(
     onToggleFavorite: (String) -> Unit
 ) {
     val list = deities.filter { favorites.contains(it.id) }
+
     MythosScaffoldBackground {
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 16.dp, vertical = 20.dp)
+                .padding(
+                    horizontal = 16.dp,
+                    vertical = 20.dp
+                )
         ) {
-            SectionTitle("FAVORITOS", "Suas obras salvas no acervo")
+
+            SectionTitle(
+                "FAVORITOS",
+                "Suas obras salvas no acervo"
+            )
+
             Spacer(Modifier.height(16.dp))
+
             if (list.isEmpty()) {
-                Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+
                     Text(
                         "Nenhuma obra favoritada ainda.\nToque no coração na galeria.",
                         color = MythosMuted,
@@ -47,18 +63,26 @@ fun FavoritesPage(
                         textAlign = TextAlign.Center
                     )
                 }
+
             } else {
+
                 LazyVerticalGrid(
                     columns = GridCells.Fixed(2),
                     horizontalArrangement = Arrangement.spacedBy(12.dp),
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
+
                     items(list) { deity ->
+
                         DeityCard(
                             deity = deity,
                             isFavorite = true,
-                            onClick = { onDeityClick(deity.id) },
-                            onToggleFavorite = { onToggleFavorite(deity.id) }
+                            onClick = {
+                                onDeityClick(deity.id)
+                            },
+                            onToggleFavorite = {
+                                onToggleFavorite(deity.id)
+                            }
                         )
                     }
                 }

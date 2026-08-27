@@ -2,6 +2,7 @@ package com.example.mythos.pages
 
 import com.example.mythos.components.*
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -29,9 +30,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.mythos.R
 import com.example.mythos.model.Deity
 import com.example.mythos.ui.theme.MythosBorder
 import com.example.mythos.ui.theme.MythosGold
@@ -53,13 +59,35 @@ fun DetailPage(
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
         ) {
-            Box(modifier = Modifier.fillMaxWidth()) {
 
-                ArtworkFrame(
-                    name = deity.name,
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(360.dp)
+                    .clip(RoundedCornerShape(bottomStart = 20.dp, bottomEnd = 20.dp))
+            ) {
+
+                Image(
+                    painter = painterResource(
+                        id = getDeityImage(deity.id)
+                    ),
+                    contentDescription = "Imagem de ${deity.name}",
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+
+                // Gradiente para melhorar a leitura dos elementos sobre a imagem
+                Box(
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .height(360.dp)
+                        .fillMaxSize()
+                        .background(
+                            Brush.verticalGradient(
+                                colors = listOf(
+                                    Color.Transparent,
+                                    Color.Black.copy(alpha = 0.75f)
+                                )
+                            )
+                        )
                 )
 
                 Icon(
@@ -81,6 +109,24 @@ fun DetailPage(
                 ) {
                     FavoriteIcon(isFavorite)
                 }
+
+                Column(
+                    modifier = Modifier
+                        .align(Alignment.BottomStart)
+                        .padding(20.dp)
+                ) {
+                    Text(
+                        deity.name,
+                        color = MythosIvory,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+
+                    Text(
+                        "Mitologia ${deity.culture}",
+                        color = MythosGold,
+                        style = MaterialTheme.typography.bodyLarge
+                    )
+                }
             }
 
             Column(
@@ -88,17 +134,6 @@ fun DetailPage(
                     .fillMaxWidth()
                     .padding(20.dp)
             ) {
-                Text(
-                    deity.name,
-                    color = MythosIvory,
-                    style = MaterialTheme.typography.titleLarge
-                )
-
-                Text(
-                    "Mitologia ${deity.culture}",
-                    color = MythosGoldOrIvory(),
-                    style = MaterialTheme.typography.bodyLarge
-                )
 
                 Text(
                     deity.period,
@@ -146,6 +181,7 @@ fun DetailPage(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
+
                     AttributeItem(
                         "PODER",
                         deity.power,
@@ -182,7 +218,9 @@ fun DetailPage(
                         )
                         .padding(14.dp)
                 ) {
+
                     Column {
+
                         Text(
                             "REPRESENTAÇÃO ARTÍSTICA",
                             color = MythosGold,
@@ -212,8 +250,24 @@ fun DetailPage(
     }
 }
 
-@Composable
-private fun MythosGoldOrIvory() = MythosGold
+private fun getDeityImage(id: String): Int {
+    return when (id.lowercase()) {
+
+        "zeus" -> R.drawable.zeus
+
+        "thor" -> R.drawable.thor
+
+        "jupiter" -> R.drawable.jupiter
+
+        "indra" -> R.drawable.indra
+
+        "hercules" -> R.drawable.hercules
+
+        "ra" -> R.drawable.ra
+
+        else -> R.drawable.zeus
+    }
+}
 
 @Composable
 private fun AttributeItem(
@@ -226,6 +280,7 @@ private fun AttributeItem(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
         Icon(
             icon,
             contentDescription = label,

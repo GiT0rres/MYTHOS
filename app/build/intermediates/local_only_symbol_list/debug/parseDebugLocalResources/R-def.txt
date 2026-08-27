@@ -1,5 +1,16 @@
 R_DEF: Internal format may change without notice
 local
+drawable hercules
+drawable ic_launcher_background
+drawable icone
+drawable indra
+drawable jupiter
+drawable ra
+drawable thor
+drawable zeus
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
 string app_name
 string gcm_defaultSenderId
 string google_api_key
