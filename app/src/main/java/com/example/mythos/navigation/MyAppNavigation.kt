@@ -52,13 +52,23 @@ fun MyAppNavigation(
 
     // Mantém o usuário na área autenticada ou nas telas de login conforme o Firebase Auth.
     LaunchedEffect(authState) {
+
         when (authState) {
-            is AuthState.Authenticated -> navController.navigate(Screen.Home.route) {
-                popUpTo(0)
+
+            is AuthState.Authenticated -> {
+
+                navController.navigate(Screen.Home.route) {
+                    popUpTo(0)
+                }
             }
-            is AuthState.Unauthenticated -> navController.navigate(Screen.Login.route) {
-                popUpTo(0)
+
+            is AuthState.Unauthenticated -> {
+
+                navController.navigate(Screen.Login.route) {
+                    popUpTo(0)
+                }
             }
+
             else -> Unit
         }
     }

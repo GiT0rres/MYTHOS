@@ -4,26 +4,7 @@
             "outputFile": "com.example.mythos.app-mergeDebugResources-68:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\c7df1d2cf2688db5b716c211e0bc309e\\transformed\\credentials-play-services-auth-1.2.0-rc01\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "543"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "864",
-                        "endLines": "17",
-                        "endColumns": "12",
-                        "endOffsets": "1352"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\FATEC ZONA LESTE\\.gradle\\caches\\8.9\\transforms\\7670504baed46b3bafcc308737115939\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\7670504baed46b3bafcc308737115939\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -39,6 +20,25 @@
                         "endLines": "2,3,4,5,6,7,8,9,20,25",
                         "endColumns": "117,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "168,232,299,363,479,605,731,859,1524,1876"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\c7df1d2cf2688db5b716c211e0bc309e\\transformed\\credentials-play-services-auth-1.2.0-rc01\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "543"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "864",
+                        "endLines": "17",
+                        "endColumns": "12",
+                        "endOffsets": "1352"
                     }
                 }
             ]
